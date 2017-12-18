@@ -1,0 +1,21 @@
+{
+  "users": {
+    "result": [
+      {
+        "id": "1",
+        "name": "Devid",
+        "avatarUrl": "../../../assets/images/image_1.png"
+      },
+      {
+        "id": "2",
+        "name": "Sam",
+        "avatarUrl": "../../../assets/images/image_2.png"
+      },
+      {
+        "id": "3",
+        "name": "Baby",
+        "avatarUrl": "../../../assets/images/image_1.png"
+      }
+    ]
+  }
+}

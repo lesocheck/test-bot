@@ -1,0 +1,14 @@
+$black: #212121;
+$blue: #2196F3;
+$red: #F44336;
+$grey: #757575;
+$silver: #BDBDBD;
+
+$trans: all 300ms ease;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
