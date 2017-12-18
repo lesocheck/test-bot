@@ -10,4 +10,3 @@ json-server --watch api.json
 # Development server
 ng serve
 
-"# test-bot" 

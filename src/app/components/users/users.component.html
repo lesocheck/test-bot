@@ -1,0 +1,18 @@
+<div class="component-wrap">
+
+  <div *ngIf="!userDetailView">
+    <h1>Users</h1>
+    <ul class="list-wrap" *ngIf="users">
+      <li *ngFor="let user of users; let index = index" (click)="viewUserDetails(user, index)" class="user-item">
+        <div class="img-wrap">
+          <img [src]="user.avatarUrl" alt="">
+        </div>
+
+        <span class="user-name">{{user.name}}</span>
+      </li>
+    </ul>
+  </div>
+
+  <app-user-details  *ngIf="userDetailView" [(user)]="userDetails" (onChanged)="onChanged($event)"></app-user-details>
+  <button *ngIf="userDetailView" (click)="userDetailView = !userDetailView" class="back-btn">Back</button>
+</div>

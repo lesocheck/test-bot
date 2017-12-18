@@ -1,0 +1,12 @@
+<div class="user-detail-wrap">
+  <h1>User detail</h1>
+  <div class="image-wrap">
+    <img [src]="user.avatarUrl" alt="">
+  </div>
+  <div class="input-wrap">
+    <input type="text" [(ngModel)]="user.name" [disabled]="edit">
+    <span class="error" *ngIf="!edit && user.name.length < 3">Too short</span>
+    <button class="button edit" (click)="edit = !edit" *ngIf="edit">Edit</button>
+    <button class="button save" (click)="save(user)" *ngIf="!edit" [disabled]="user.name.length < 3">Save</button>
+  </div>
+</div>
